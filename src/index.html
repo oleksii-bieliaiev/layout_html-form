@@ -105,7 +105,50 @@
            min="9:00"
            max="23:59">
         </div>
+        <div class="form">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select name="cars"
+          id="cars"
+          required
+          multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="form">
+          <label for="range">How do you rate our work?</label>
+          <input type="range"
+           id="rate"
+           name="rate"
+           min="1"
+           max="10">
+        </div>
       </fieldset>
     </form>
+    <form action="#" class="form-field">
+      <fieldset>
+        <legend>Additional info</legend>
+        <div class="form">
+          <label for="comments">Comments:</label>
+          <textarea
+           id="comments"
+           name="comments"
+           cols="20"
+           rows="2"
+        ></textarea>
+        </div>
+        <div class="form">
+          <label for="recommend">Would you recommend us?</label>
+          <select name="recommend"
+          id="recommend"
+          required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
   </body>
 </html>
