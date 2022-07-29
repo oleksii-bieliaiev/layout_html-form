@@ -13,5 +13,43 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="#">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form">
+          <label for="name">Surname:</label>
+          <input type="text"
+           id="surname">
+        </div>
+        <div class="form">
+          <label for="name">Name:</label>
+          <input type="text"
+          id="name">
+        </div>
+        <div class="form">
+          <label for="tentacles">How old are you?</label>
+          <input type="number"
+          id="tentacles"
+          name ="tentacles"
+          min ="1"
+          max="100"
+          value="12">
+        </div>
+        <div class="form">
+          <label for="start">Full date of birth:</label>
+          <input type="date"
+          id="dateOfBirth"
+          name ="dateOfBirth"
+          min ="1960-01-01"
+          max="2022-07-29">
+        </div>
+        <div class="form">
+          <label for="terms">I accept the term of the aggrement</label>
+          <input type="checkbox"
+          id="terms"
+          required>
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>
