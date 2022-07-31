@@ -1,8 +1,12 @@
 
-.form {
-  margin: 10px 0;
+.form-field {
+  display: block;
 }
 
-.form-field {
-  padding: 20px 0;
+.field {
+  margin-bottom: 10px;
+}
+
+.blockForm {
+  margin-bottom: 20px;
 }

@@ -11,146 +11,163 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
     <script type="text/javascript" src="./main.js"></script>
-    <form action="#"class="form-field">
-      <fieldset>
+    <form class="form"
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post">
+      <fieldset class="blockForm">
         <legend>Personal information</legend>
-        <div class="form">
-          <label for="name">Surname:</label>
+        <div class="form-field">
+          <label for="surname">Surname:</label>
           <input type="text"
-           id="surname"
+           class="field"
+           name="Surname"
+           required
            autocomplete="off">
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="name">Name:</label>
           <input type="text"
-          id="name"
-          autocomplete="off">
+          class="field"
+          autocomplete="off"
+          name="Name"
+          required>
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="tentacles">How old are you?</label>
           <input type="number"
-          id="tentacles"
-          name ="tentacles"
+          class="field"
+          name ="age"
           min ="1"
           max="100"
-          value="12">
+          value="12"
+          autocomplete="off">
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="start">Full date of birth:</label>
           <input type="date"
-          id="dateOfBirth"
+          class="field"
           name ="dateOfBirth"
           min ="1960-01-01"
           max="2022-07-29">
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="terms">I accept the term of the aggrement</label>
           <input type="checkbox"
-          id="terms"
+          class="lastfield"
+          name="terms"
           required>
         </div>
       </fieldset>
-    </form>
-    <form action="#" class="form-field">
-      <fieldset>
+
+      <fieldset class="blockForm">
         <legend>Registration</legend>
-        <div class="form">
+        <div class="form-field">
           <label for="email">E-mail:</label>
           <input type="email"
-           id="email"
-           placeholder="email@exemple.com">
+           class="field"
+           placeholder="email@exemple.com"
+           name="E-mail"
+           required>
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="password">Password:</label>
           <input type="password"
-           id="password"
-           autocomplete="off">
+           class="lastfield"
+           name="password"
+           required
+           min="5"
+           max="10">
         </div>
       </fieldset>
-    </form>
-    <form action="#" class="form-field">
-      <fieldset>
+
+      <fieldset class="blockForm">
         <legend>An interesting fact about you!</legend>
-        <div class="form">
+        <div class="form-field field">
           <label for="cats">Do you love cats?</label>
           <label>
             <input type="radio"
              name ="cats"
-             value="y"
-             checked >
+             value="yes" >
            Yes
           </label>
           <label>
             <input type="radio"
              name ="cats"
-             value="n"
-             checked>
+             value="no">
            No
           </label>
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="color">What is your favorite color?</label>
           <input type="color"
-           id="head"
-           name="head"
+           class="field"
+           name="color"
            value="#e66465">
         </div>
-        <div class="form">
-          <label for="appt">What time do you go to bed?</label>
+
+        <div class="form-field">
+          <label for="time">What time do you go to bed?</label>
           <input type="time"
-           id="appt"
-           name="appt"
+           class="field"
+           name="time"
            min="9:00"
            max="23:59">
         </div>
-        <div class="form">
+
+        <div class="form-field field" name="cars">
           <label for="cars">What are your favorite brand of cars?</label>
-          <select name="cars"
-          id="cars"
-          required
+          <select name="brand"
           multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
+            <option value=" " selected></option>
           </select>
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="range">How do you rate our work?</label>
           <input type="range"
-           id="rate"
+           class="lastfield"
            name="rate"
            min="1"
-           max="10">
+           max="10"
+           value="0">
         </div>
       </fieldset>
-    </form>
-    <form action="#" class="form-field">
-      <fieldset>
+
+      <fieldset class="blockForm">
         <legend>Additional info</legend>
-        <div class="form">
+        <div class="form-field field">
           <label for="comments">Comments:</label>
           <textarea
-           id="comments"
-           name="comments"
+           name="Comments"
            cols="20"
            rows="2"
         ></textarea>
         </div>
-        <div class="form">
+
+        <div class="form-field">
           <label for="recommend">Would you recommend us?</label>
           <select name="recommend"
-          id="recommend"
-          required>
+          class="lastfield">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </div>
       </fieldset>
-    </form>
 
-    <button type="submit">Submit</button>
-    
+
+      <button type="submit">Submit</button>
+
+    </form>
   </body>
 </html>
